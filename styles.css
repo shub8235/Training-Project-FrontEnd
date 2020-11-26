@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  background: transparent linear-gradient(180deg, #ff7de1 0%, #2af1f1a8 100%) 0%
+    0% no-repeat padding-box;
+}
+button {
+  outline: none;
+}
+/* ############################# Table CSS ################################ */
+.table {
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #a339ff;
+  color: white;
+}
+.table tr.selected {
+  background-color: #a339ff7d;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font: 12px Montserrat;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  margin: 0 6px;
+}
+.edit-btn {
+  border: 2px solid #21ba45;
+  background-color: #21ba45;
+}
+.edit-btn:hover {
+  border: 2px solid #16ab39;
+  background-color: #16ab39;
+}
+.delete-btn {
+  border: 2px solid #db2828;
+  background-color: #db2828;
+}
+.delete-btn:hover {
+  border: 2px solid #d01919;
+  background-color: #d01919;
+}
+.give-exam-btn {
+  border: 2px solid #2185d0;
+  background-color: #2185d0;
+}
+.give-exam-btn:hover {
+  border: 2px solid #1678c2;
+  background-color: #1678c2;
+}
+/*------------MESSAGES -----------------*/
+.alert {
+  display: flex;
+}
+.alert button {
+  position: relative;
+  margin-left: auto;
+  width: 4% !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #9f3a38 !important;
+  font-size: 14px !important;
+}
+/* Alert Message */
+.alert-message {
+  box-shadow: 0 0 0 1px #e0b4b4 inset, 0 0 0 0 transparent;
+  background-color: #fff6f6;
+  color: #9f3a38;
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.28571429rem;
+}
+/* Success  Message */
+.success-message {
+  box-shadow: 0 0 0 1px #a3c293 inset, 0 0 0 0 transparent;
+  background-color: #fcfff5;
+  color: #1a531b;
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.28571429rem;
+}
+/* /* Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: #a339ff;
+}
